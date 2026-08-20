@@ -1,4 +1,10 @@
 import type { Destination } from "./destinationTypes";
+import gyeongbokgungPalaceImage from "../assets/images/destinations/gyeongbokgung-palace.webp";
+import bukchonHanokVillageImage from "../assets/images/destinations/bukchon-hanok-village.webp";
+import haeundaeBeachImage from "../assets/images/destinations/haeundae-beach.webp";
+import bulguksaTempleImage from "../assets/images/destinations/bulguksa-temple.webp";
+import seongsanIlchulbongImage from "../assets/images/destinations/seongsan-ilchulbong.webp";
+import namiIslandImage from "../assets/images/destinations/nami-island.webp";
 
 const placeholderImagePath =
   "/images/placeholders/destination-placeholder.webp";
@@ -13,22 +19,29 @@ type UnverifiedDestinationField =
   | "lastVerifiedAt"
   | "nearestTransit";
 
-type DestinationContent = Omit<Destination, UnverifiedDestinationField>;
+type DestinationContent = Omit<Destination, UnverifiedDestinationField> & {
+  image?: Destination["images"][number];
+};
 
-function createDestination(content: DestinationContent): Destination {
+function createDestination({
+  image,
+  ...content
+}: DestinationContent): Destination {
   return {
     ...content,
     koreanAddress: null,
     coordinates: null,
-    images: [
-      {
-        src: placeholderImagePath,
-        alt: {
-          en: `Image placeholder for ${content.name.en}`,
-          es: `Imagen provisional de ${content.name.es}`,
-        },
-      },
-    ],
+    images: image
+      ? [image]
+      : [
+          {
+            src: placeholderImagePath,
+            alt: {
+              en: `Image placeholder for ${content.name.en}`,
+              es: `Imagen provisional de ${content.name.es}`,
+            },
+          },
+        ],
     operatingInfo: null,
     externalMapUrl: null,
     lastVerifiedAt: null,
@@ -41,6 +54,17 @@ export const destinations = [
     slug: "gyeongbokgung-palace",
     name: { en: "Gyeongbokgung Palace", es: "Palacio Gyeongbokgung" },
     koreanName: "경복궁",
+    image: {
+      src: gyeongbokgungPalaceImage,
+      alt: {
+        en: "Geunjeongjeon Hall rising above visitors in the main courtyard of Gyeongbokgung Palace",
+        es: "El pabellón Geunjeongjeon sobre los visitantes en el patio principal del palacio Gyeongbokgung",
+      },
+      credit: "Brady Bellini / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Gyeongbokgung(palace)_Geunjeongjeon(hall).jpg",
+      license: "CC0 1.0 Universal",
+    },
     summary: {
       en: "A grand Joseon palace that introduces Seoul's royal history through gates, courtyards, and mountain views.",
       es: "Un gran palacio de Joseon que acerca a la historia real de Seúl entre puertas, patios y vistas a la montaña.",
@@ -62,6 +86,17 @@ export const destinations = [
     slug: "bukchon-hanok-village",
     name: { en: "Bukchon Hanok Village", es: "Aldea Hanok de Bukchon" },
     koreanName: "북촌한옥마을",
+    image: {
+      src: bukchonHanokVillageImage,
+      alt: {
+        en: "Traditional hanok homes along a sloping lane with central Seoul in the distance",
+        es: "Casas hanok tradicionales junto a una calle en pendiente con el centro de Seúl al fondo",
+      },
+      credit: "Bgag / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village_01.jpg",
+      license: "CC0 1.0 Universal",
+    },
     summary: {
       en: "A living Seoul neighborhood where traditional hanok houses line narrow hillside lanes.",
       es: "Un barrio habitado de Seúl donde las casas tradicionales hanok bordean estrechas calles en pendiente.",
@@ -209,6 +244,17 @@ export const destinations = [
     slug: "nami-island",
     name: { en: "Nami Island", es: "Isla Nami" },
     koreanName: "남이섬",
+    image: {
+      src: namiIslandImage,
+      alt: {
+        en: "A shaded path lined with tall green trees on Nami Island",
+        es: "Un sendero sombreado entre hileras de árboles altos y verdes en la isla Nami",
+      },
+      credit: "Fidel Fernando (@fifernando) / Unsplash",
+      sourceUrl:
+        "https://unsplash.com/photos/a-path-lined-with-tall-green-trees-9NqIUfTcotE",
+      license: "Unsplash License",
+    },
     summary: {
       en: "A landscaped island known for tree-lined paths, gardens, and strong seasonal scenery.",
       es: "Una isla ajardinada conocida por sus caminos arbolados, jardines y paisajes que cambian con las estaciones.",
@@ -440,6 +486,17 @@ export const destinations = [
     slug: "haeundae-beach",
     name: { en: "Haeundae Beach", es: "Playa de Haeundae" },
     koreanName: "해운대해수욕장",
+    image: {
+      src: haeundaeBeachImage,
+      alt: {
+        en: "People walking along Haeundae Beach as the sun sets over the sea",
+        es: "Personas caminando por la playa de Haeundae mientras el sol se pone sobre el mar",
+      },
+      credit: "Patrick (@astrobound) / Unsplash",
+      sourceUrl:
+        "https://unsplash.com/photos/people-on-seashore-HmiG5OB3QgM",
+      license: "Unsplash License",
+    },
     summary: {
       en: "Busan's best-known urban beach, framed by a broad bay, promenade, and dense city skyline.",
       es: "La playa urbana más conocida de Busan, rodeada por una amplia bahía, un paseo y un denso perfil urbano.",
@@ -461,6 +518,16 @@ export const destinations = [
     slug: "bulguksa-temple",
     name: { en: "Bulguksa Temple", es: "Templo Bulguksa" },
     koreanName: "불국사",
+    image: {
+      src: bulguksaTempleImage,
+      alt: {
+        en: "Stone steps and colorful wooden halls at Bulguksa Temple beneath a wooded hillside",
+        es: "Escaleras de piedra y pabellones de madera coloridos en el templo Bulguksa bajo una ladera boscosa",
+      },
+      credit: "Bernard Gagnon (Bgag) / Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bulguksa_03.jpg",
+      license: "CC0 1.0 Universal",
+    },
     summary: {
       en: "A landmark of Silla Buddhist heritage known for balanced temple architecture and historic stonework.",
       es: "Un lugar emblemático del patrimonio budista de Silla, conocido por su arquitectura equilibrada y su trabajo histórico en piedra.",
@@ -566,6 +633,17 @@ export const destinations = [
     slug: "seongsan-ilchulbong",
     name: { en: "Seongsan Ilchulbong", es: "Seongsan Ilchulbong" },
     koreanName: "성산일출봉",
+    image: {
+      src: seongsanIlchulbongImage,
+      alt: {
+        en: "A volcanic rock outcrop beside the trail with Seongsan village and the sea below",
+        es: "Un afloramiento de roca volcánica junto al sendero, con el pueblo de Seongsan y el mar al fondo",
+      },
+      credit: "Bernard Gagnon (Bgag) / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Seongsan_Ilchulbong_03.jpg",
+      license: "CC0 1.0 Universal",
+    },
     summary: {
       en: "A distinctive volcanic tuff cone on Jeju's eastern coast with a broad crater and sea views.",
       es: "Un singular cono volcánico de toba en la costa este de Jeju, con un amplio cráter y vistas al mar.",

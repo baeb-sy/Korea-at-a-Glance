@@ -34,6 +34,8 @@ export interface DestinationImage {
   src: string;
   alt: LocalizedText;
   credit?: string;
+  sourceUrl?: string;
+  license?: string;
 }
 
 export interface Destination {
