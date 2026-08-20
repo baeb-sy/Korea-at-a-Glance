@@ -5,6 +5,30 @@ import haeundaeBeachImage from "../assets/images/destinations/haeundae-beach.web
 import bulguksaTempleImage from "../assets/images/destinations/bulguksa-temple.webp";
 import seongsanIlchulbongImage from "../assets/images/destinations/seongsan-ilchulbong.webp";
 import namiIslandImage from "../assets/images/destinations/nami-island.webp";
+import nSeoulTowerImage from "../assets/images/destinations/n-seoul-tower.webp";
+import changdeokgungPalaceImage from "../assets/images/destinations/changdeokgung-palace.webp";
+import hongdaeRedRoadImage from "../assets/images/destinations/hongdae-red-road.webp";
+import seongsuDongImage from "../assets/images/destinations/seongsu-dong.webp";
+import suwonHwaseongFortressImage from "../assets/images/destinations/suwon-hwaseong-fortress.webp";
+import incheonChinatownImage from "../assets/images/destinations/incheon-chinatown.webp";
+import seoraksanNationalParkImage from "../assets/images/destinations/seoraksan-national-park.webp";
+import gyeongpoBeachImage from "../assets/images/destinations/gyeongpo-beach.webp";
+import sokchoTouristFisheryMarketImage from "../assets/images/destinations/sokcho-tourist-fishery-market.webp";
+import gongsanseongFortressImage from "../assets/images/destinations/gongsanseong-fortress.webp";
+import busosanseongFortressImage from "../assets/images/destinations/busosanseong-fortress.webp";
+import hanbatArboretumImage from "../assets/images/destinations/hanbat-arboretum.webp";
+import jeonjuHanokVillageImage from "../assets/images/destinations/jeonju-hanok-village.webp";
+import suncheonmanWetlandImage from "../assets/images/destinations/suncheonman-wetland.webp";
+import odongdoIslandImage from "../assets/images/destinations/odongdo-island.webp";
+import asiaCultureCenterImage from "../assets/images/destinations/asia-culture-center.webp";
+import gamcheonCultureVillageImage from "../assets/images/destinations/gamcheon-culture-village.webp";
+import haedongYonggungsaTempleImage from "../assets/images/destinations/haedong-yonggungsa-temple.webp";
+import donggungPalaceWoljiPondImage from "../assets/images/destinations/donggung-palace-wolji-pond.webp";
+import daewangamParkImage from "../assets/images/destinations/daewangam-park.webp";
+import hallasanNationalParkImage from "../assets/images/destinations/hallasan-national-park.webp";
+import seopjikojiImage from "../assets/images/destinations/seopjikoji.webp";
+import jeongbangWaterfallImage from "../assets/images/destinations/jeongbang-waterfall.webp";
+import jejuStoneParkImage from "../assets/images/destinations/jeju-stone-park.webp";
 
 const placeholderImagePath =
   "/images/placeholders/destination-placeholder.webp";
@@ -118,6 +142,17 @@ export const destinations = [
     slug: "n-seoul-tower",
     name: { en: "N Seoul Tower", es: "Torre N de Seúl" },
     koreanName: "남산서울타워",
+    image: {
+      src: nSeoulTowerImage,
+      alt: {
+        en: "Illuminated N Seoul Tower rising above a traditional pavilion and trees at night",
+        es: "La Torre N de Seúl iluminada sobre un pabellón tradicional y árboles por la noche",
+      },
+      credit: "lumoplank / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Namsan_Tower,_Seoul_-_Namsan2299.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A hilltop Seoul landmark with wide views across the capital's dense urban landscape.",
       es: "Un símbolo de Seúl situado en una colina, con amplias vistas sobre el paisaje urbano de la capital.",
@@ -139,6 +174,17 @@ export const destinations = [
     slug: "changdeokgung-palace",
     name: { en: "Changdeokgung Palace", es: "Palacio Changdeokgung" },
     koreanName: "창덕궁",
+    image: {
+      src: changdeokgungPalaceImage,
+      alt: {
+        en: "Colorful wooden Seongjeonggak building beneath a blue sky at Changdeokgung Palace",
+        es: "El colorido edificio de madera Seongjeonggak bajo el cielo azul del palacio Changdeokgung",
+      },
+      credit: "Basile Morin / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Exterior_view_of_Seongjeonggak_with_blue_sky_at_Changdeokgung_Palace_in_Seoul.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A Joseon palace celebrated for the way its halls and garden follow the natural landscape.",
       es: "Un palacio de Joseon reconocido por la armonía de sus pabellones y jardines con el paisaje natural.",
@@ -160,6 +206,17 @@ export const destinations = [
     slug: "hongdae-red-road",
     name: { en: "Hongdae Red Road", es: "Hongdae Red Road" },
     koreanName: "홍대 레드로드",
+    image: {
+      src: hongdaeRedRoadImage,
+      alt: {
+        en: "Neon signs, shops, and pedestrians along a busy Hongdae street at dusk",
+        es: "Letreros de neón, tiendas y peatones en una concurrida calle de Hongdae al anochecer",
+      },
+      credit: "lumoplank / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Hongdae,_Seoul-_Part_II_-_Hongdae2237.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A lively Hongdae route shaped by independent music, street culture, fashion, and nightlife.",
       es: "Un animado recorrido por Hongdae marcado por la música independiente, la cultura urbana, la moda y la vida nocturna.",
@@ -181,6 +238,17 @@ export const destinations = [
     slug: "seongsu-dong",
     name: { en: "Seongsu-dong", es: "Seongsu-dong" },
     koreanName: "성수동",
+    image: {
+      src: seongsuDongImage,
+      alt: {
+        en: "Pedestrians walking between brick shops and converted buildings on a Seongsu-dong street",
+        es: "Peatones entre tiendas de ladrillo y edificios renovados en una calle de Seongsu-dong",
+      },
+      credit: "Qhairy / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Seongsu_Street.jpg",
+      license: "CC BY 4.0",
+    },
     summary: {
       en: "A former industrial area known for converted workshops, design spaces, cafés, and contemporary brands.",
       es: "Una antigua zona industrial conocida por sus talleres transformados, espacios de diseño, cafeterías y marcas contemporáneas.",
@@ -202,6 +270,17 @@ export const destinations = [
     slug: "suwon-hwaseong-fortress",
     name: { en: "Suwon Hwaseong Fortress", es: "Fortaleza Hwaseong de Suwon" },
     koreanName: "수원 화성",
+    image: {
+      src: suwonHwaseongFortressImage,
+      alt: {
+        en: "Traditional wooden gate with tiled roofs inside Suwon Hwaseong Fortress",
+        es: "Puerta tradicional de madera con tejados de tejas en la fortaleza Hwaseong de Suwon",
+      },
+      credit: "Bernard Gagnon / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Gate_at_Hwaseong_Fortress.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A late-Joseon city wall whose gates, pavilions, and walking sections frame central Suwon.",
       es: "Una muralla urbana de finales de Joseon cuyos portones, pabellones y senderos rodean el centro de Suwon.",
@@ -223,6 +302,17 @@ export const destinations = [
     slug: "incheon-chinatown",
     name: { en: "Incheon Chinatown", es: "Barrio Chino de Incheon" },
     koreanName: "인천 차이나타운",
+    image: {
+      src: incheonChinatownImage,
+      alt: {
+        en: "Ornate red gateway marking the entrance to Incheon Chinatown",
+        es: "Una ornamentada puerta roja marca la entrada al Barrio Chino de Incheon",
+      },
+      credit: "Mobius6 / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Chinatown,_incheon_20230430_002.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A colorful district that reflects Incheon's port history through food streets and modern heritage.",
       es: "Un barrio lleno de color que refleja la historia portuaria de Incheon entre calles gastronómicas y patrimonio moderno.",
@@ -276,6 +366,17 @@ export const destinations = [
     slug: "seoraksan-national-park",
     name: { en: "Seoraksan National Park", es: "Parque Nacional Seoraksan" },
     koreanName: "설악산국립공원",
+    image: {
+      src: seoraksanNationalParkImage,
+      alt: {
+        en: "Granite cliffs of Ulsanbawi rising above pine trees in Seoraksan National Park",
+        es: "Los acantilados de granito de Ulsanbawi sobre los pinos del Parque Nacional Seoraksan",
+      },
+      credit: "kallerna / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Seoraksan_National_Park_panorama_3.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A dramatic mountain landscape of granite peaks, forested valleys, streams, and seasonal color.",
       es: "Un espectacular paisaje de picos de granito, valles boscosos, arroyos y colores estacionales.",
@@ -297,6 +398,17 @@ export const destinations = [
     slug: "gyeongpo-beach",
     name: { en: "Gyeongpo Beach", es: "Playa de Gyeongpo" },
     koreanName: "경포해변",
+    image: {
+      src: gyeongpoBeachImage,
+      alt: {
+        en: "Wooden swing facing the sandy shore and blue sea at Gyeongpo Beach",
+        es: "Un columpio de madera frente a la arena y el mar azul de la playa de Gyeongpo",
+      },
+      credit: "Mobius6 / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Gyeongpo_Beach_20220502_023.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A broad East Sea beach in Gangneung near Gyeongpo Lake and a popular coastal district.",
       es: "Una amplia playa del mar del Este en Gangneung, junto al lago Gyeongpo y una conocida zona costera.",
@@ -318,6 +430,17 @@ export const destinations = [
     slug: "sokcho-tourist-fishery-market",
     name: { en: "Sokcho Tourist & Fishery Market", es: "Mercado Turístico y Pesquero de Sokcho" },
     koreanName: "속초관광수산시장",
+    image: {
+      src: sokchoTouristFisheryMarketImage,
+      alt: {
+        en: "Seafood stalls and shoppers inside Sokcho Tourist and Fishery Market",
+        es: "Puestos de marisco y visitantes en el Mercado Turístico y Pesquero de Sokcho",
+      },
+      credit: "Christophe95 / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Sokcho_Tourist_%26_Fishery_Market.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A covered traditional market where East Coast seafood and Sokcho specialties fill compact alleys.",
       es: "Un mercado tradicional cubierto donde los mariscos de la costa este y las especialidades de Sokcho llenan estrechos pasillos.",
@@ -339,6 +462,17 @@ export const destinations = [
     slug: "gongsanseong-fortress",
     name: { en: "Gongsanseong Fortress", es: "Fortaleza Gongsanseong" },
     koreanName: "공산성",
+    image: {
+      src: gongsanseongFortressImage,
+      alt: {
+        en: "Stone fortress walls and a gate pavilion on a green slope at Gongsanseong",
+        es: "Murallas de piedra y un pabellón de entrada sobre una ladera verde en Gongsanseong",
+      },
+      credit: "Ashy Minivet / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Geumseoru_Gate_Pavilion_of_Gongsanseong_Fortress_(2).jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A Baekje-era fortress in Gongju with wooded walls overlooking the Geumgang River and city.",
       es: "Una fortaleza de la época de Baekje en Gongju, con murallas arboladas y vistas al río Geumgang y a la ciudad.",
@@ -360,6 +494,17 @@ export const destinations = [
     slug: "busosanseong-fortress",
     name: { en: "Busosanseong Fortress", es: "Fortaleza Busosanseong" },
     koreanName: "부소산성",
+    image: {
+      src: busosanseongFortressImage,
+      alt: {
+        en: "A red pavilion among rocks and pine trees at Busosanseong Fortress",
+        es: "Un pabellón rojo entre rocas y pinos en la fortaleza Busosanseong",
+      },
+      credit: "Bernard Gagnon / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Baekhwajeon_Pavilion.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A forested Baekje fortress landscape that rises behind the former royal area of Buyeo.",
       es: "Un paisaje fortificado y boscoso de Baekje que se eleva tras la antigua zona real de Buyeo.",
@@ -381,6 +526,17 @@ export const destinations = [
     slug: "hanbat-arboretum",
     name: { en: "Hanbat Arboretum", es: "Arboreto Hanbat" },
     koreanName: "한밭수목원",
+    image: {
+      src: hanbatArboretumImage,
+      alt: {
+        en: "A lakeside pavilion, fountain, and city skyline at Hanbat Arboretum",
+        es: "Un pabellón junto al lago, una fuente y el perfil urbano en el Arboreto Hanbat",
+      },
+      credit: "Pmlydon / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Lydon_daejeon-arboretum-lake.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A spacious urban arboretum that brings gardens, walking paths, and seasonal plants into central Daejeon.",
       es: "Un amplio arboreto urbano con jardines, senderos y plantas estacionales en el centro de Daejeon.",
@@ -402,6 +558,17 @@ export const destinations = [
     slug: "jeonju-hanok-village",
     name: { en: "Jeonju Hanok Village", es: "Aldea Hanok de Jeonju" },
     koreanName: "전주한옥마을",
+    image: {
+      src: jeonjuHanokVillageImage,
+      alt: {
+        en: "Rows of tiled hanok rooftops across Jeonju Hanok Village",
+        es: "Filas de tejados de tejas sobre las casas hanok de la aldea de Jeonju",
+      },
+      credit: "Bernard Gagnon / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Jeonju_Hanok_Maeul_02.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A large traditional district where hanok architecture, crafts, heritage sites, and local food come together.",
       es: "Un amplio barrio tradicional donde se reúnen la arquitectura hanok, la artesanía, el patrimonio y la gastronomía local.",
@@ -423,6 +590,17 @@ export const destinations = [
     slug: "suncheonman-wetland",
     name: { en: "Suncheonman Wetland", es: "Humedal de la bahía de Suncheon" },
     koreanName: "순천만습지",
+    image: {
+      src: suncheonmanWetlandImage,
+      alt: {
+        en: "Golden reed fields stretching toward water and low hills at Suncheon Bay",
+        es: "Campos de juncos dorados que se extienden hacia el agua y las colinas de la bahía de Suncheon",
+      },
+      credit: "Jjw / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:20181231_Suncheon_Bay_002.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A protected coastal wetland of reed fields, tidal flats, waterways, and wide open skies.",
       es: "Un humedal costero protegido con campos de juncos, llanuras de marea, canales y amplios cielos.",
@@ -444,6 +622,17 @@ export const destinations = [
     slug: "odongdo-island",
     name: { en: "Odongdo Island", es: "Isla Odongdo" },
     koreanName: "오동도",
+    image: {
+      src: odongdoIslandImage,
+      alt: {
+        en: "Odongdo lighthouse above a rocky shoreline and coastal walkway",
+        es: "El faro de Odongdo sobre una costa rocosa y un paseo junto al mar",
+      },
+      credit: "Mobius6 / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Yeosu_Odongdo_20180929_002.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A small forested island in Yeosu with coastal paths, rocky viewpoints, and maritime scenery.",
       es: "Una pequeña isla boscosa de Yeosu con senderos costeros, miradores rocosos y paisaje marítimo.",
@@ -465,6 +654,17 @@ export const destinations = [
     slug: "asia-culture-center",
     name: { en: "Asia Culture Center", es: "Centro de Cultura Asiática" },
     koreanName: "국립아시아문화전당",
+    image: {
+      src: asiaCultureCenterImage,
+      alt: {
+        en: "Landscaped plazas and low modern buildings of Asia Culture Center in central Gwangju",
+        es: "Plazas ajardinadas y edificios modernos de poca altura del Centro de Cultura Asiática en Gwangju",
+      },
+      credit: "Lain4lest / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Asian_culture_complexp.jpg",
+      license: "CC BY-SA 3.0",
+    },
     summary: {
       en: "A major Gwangju complex for exhibitions, performance, research, public space, and Asian creative exchange.",
       es: "Un gran complejo de Gwangju dedicado a exposiciones, artes escénicas, investigación, espacios públicos e intercambio creativo asiático.",
@@ -549,6 +749,17 @@ export const destinations = [
     slug: "gamcheon-culture-village",
     name: { en: "Gamcheon Culture Village", es: "Aldea Cultural de Gamcheon" },
     koreanName: "감천문화마을",
+    image: {
+      src: gamcheonCultureVillageImage,
+      alt: {
+        en: "Colorful hillside homes layered across Gamcheon Culture Village in Busan",
+        es: "Casas de colores escalonadas por la ladera de la Aldea Cultural de Gamcheon en Busan",
+      },
+      credit: "Bernard Gagnon / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Gamcheon_Culture_Village.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A hillside Busan neighborhood of terraced houses, steep lanes, public art, and layered sea views.",
       es: "Un barrio de Busan en la ladera, con casas escalonadas, calles empinadas, arte público y vistas al mar.",
@@ -570,6 +781,17 @@ export const destinations = [
     slug: "haedong-yonggungsa-temple",
     name: { en: "Haedong Yonggungsa Temple", es: "Templo Haedong Yonggungsa" },
     koreanName: "해동용궁사",
+    image: {
+      src: haedongYonggungsaTempleImage,
+      alt: {
+        en: "Temple halls and a stone bridge surrounded by trees at Haedong Yonggungsa",
+        es: "Pabellones del templo y un puente de piedra entre árboles en Haedong Yonggungsa",
+      },
+      credit: "Christian Bolz / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Haedong_Yonggungsa_Temple_near_Busan.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "A Buddhist temple on Busan's rocky coast where prayer halls face the open sea.",
       es: "Un templo budista en la costa rocosa de Busan, con pabellones orientados hacia el mar abierto.",
@@ -591,6 +813,17 @@ export const destinations = [
     slug: "donggung-palace-wolji-pond",
     name: { en: "Donggung Palace and Wolji Pond", es: "Palacio Donggung y estanque Wolji" },
     koreanName: "동궁과 월지",
+    image: {
+      src: donggungPalaceWoljiPondImage,
+      alt: {
+        en: "Illuminated palace pavilion reflected in Wolji Pond at night",
+        es: "Un pabellón del palacio iluminado se refleja en el estanque Wolji por la noche",
+      },
+      credit: "lumoplank / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Donggung_Palace_%26_Wolji_Pond,_Gyeongju_-_Donggung2687.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A restored Silla palace setting where elegant pavilions reflect across a landscaped pond.",
       es: "Un conjunto palaciego restaurado de Silla donde elegantes pabellones se reflejan en un estanque ajardinado.",
@@ -612,6 +845,17 @@ export const destinations = [
     slug: "daewangam-park",
     name: { en: "Daewangam Park", es: "Parque Daewangam" },
     koreanName: "대왕암공원",
+    image: {
+      src: daewangamParkImage,
+      alt: {
+        en: "Rocky coastal formations and a footbridge at Daewangam Park",
+        es: "Formaciones rocosas junto al mar y una pasarela en el Parque Daewangam",
+      },
+      credit: "Shinfull / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Daewangam_Park.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "An Ulsan coastal park of pine forest, rugged rock formations, sea views, and local legend.",
       es: "Un parque costero de Ulsan con pinos, formaciones rocosas, vistas al mar y leyendas locales.",
@@ -665,6 +909,17 @@ export const destinations = [
     slug: "hallasan-national-park",
     name: { en: "Hallasan National Park", es: "Parque Nacional Hallasan" },
     koreanName: "한라산국립공원",
+    image: {
+      src: hallasanNationalParkImage,
+      alt: {
+        en: "Wooden trail crossing a green mountain ridge beneath clouds in Hallasan National Park",
+        es: "Una pasarela de madera cruza una cresta verde bajo las nubes del Parque Nacional Hallasan",
+      },
+      credit: "Basile Morin / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Wooden_staircase_along_Yeongsil_Trail_with_the_mountains_of_Hallasan_Park_Jeju_Island_South_Korea.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "Jeju's central mountain national park, with volcanic landscapes and trails that change markedly by season.",
       es: "El parque nacional de la montaña central de Jeju, con paisajes volcánicos y senderos que cambian notablemente según la estación.",
@@ -686,6 +941,17 @@ export const destinations = [
     slug: "seopjikoji",
     name: { en: "Seopjikoji", es: "Seopjikoji" },
     koreanName: "섭지코지",
+    image: {
+      src: seopjikojiImage,
+      alt: {
+        en: "Coastal path leading past volcanic rocks toward a white lighthouse at Seopjikoji",
+        es: "Un sendero costero pasa entre rocas volcánicas hacia un faro blanco en Seopjikoji",
+      },
+      credit: "Engin Cukuroglu / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Jeju_Island_Seopjikoji.jpg",
+      license: "CC BY-SA 4.0",
+    },
     summary: {
       en: "An eastern Jeju headland of grassland, volcanic rock, low cliffs, and views toward Seongsan Ilchulbong.",
       es: "Un cabo del este de Jeju con praderas, roca volcánica, acantilados bajos y vistas hacia Seongsan Ilchulbong.",
@@ -707,6 +973,17 @@ export const destinations = [
     slug: "jeongbang-waterfall",
     name: { en: "Jeongbang Waterfall", es: "Cascada Jeongbang" },
     koreanName: "정방폭포",
+    image: {
+      src: jeongbangWaterfallImage,
+      alt: {
+        en: "Jeongbang Waterfall dropping beside a dark volcanic cliff",
+        es: "La cascada Jeongbang cae junto a un oscuro acantilado volcánico",
+      },
+      credit: "Abasaa / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Jeongbang_Waterfall_01.JPG",
+      license: "Public domain",
+    },
     summary: {
       en: "A Seogwipo waterfall that drops from a dark cliff beside the sea, framed by rock and pine trees.",
       es: "Una cascada de Seogwipo que cae desde un acantilado oscuro junto al mar, rodeada de roca y pinos.",
@@ -728,6 +1005,17 @@ export const destinations = [
     slug: "jeju-stone-park",
     name: { en: "Jeju Stone Park", es: "Parque de la Piedra de Jeju" },
     koreanName: "제주돌문화공원",
+    image: {
+      src: jejuStoneParkImage,
+      alt: {
+        en: "Rain-covered volcanic stone basins and grass at Jeju Stone Park",
+        es: "Cuencos de piedra volcánica mojados por la lluvia entre la hierba del Parque de la Piedra de Jeju",
+      },
+      credit: "Bernard Gagnon / Wikimedia Commons",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Jeju_Stone_Park_04.jpg",
+      license: "CC0",
+    },
     summary: {
       en: "A museum and ecological park that explains Jeju's volcanic stone culture through myth, landscape, and objects.",
       es: "Un museo y parque ecológico que explica la cultura de la piedra volcánica de Jeju mediante mitos, paisaje y objetos.",
