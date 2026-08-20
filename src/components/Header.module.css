@@ -1,0 +1,85 @@
+.header {
+  position: sticky;
+  z-index: var(--z-header);
+  top: 0;
+  height: 4rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  max-width: var(--container-page);
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--page-gutter);
+  margin: 0 auto;
+}
+
+.wordmark,
+.exploreLink {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.wordmark {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.exploreLink {
+  display: none;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-button);
+  font-weight: 500;
+}
+
+.wordmark:focus-visible,
+.exploreLink:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .wordmark:hover,
+  .exploreLink:hover {
+    color: var(--color-accent-strong);
+  }
+
+  .exploreLink:hover {
+    background: var(--color-surface-subtle);
+  }
+}
+
+@media (min-width: 40rem) {
+  .exploreLink {
+    display: flex;
+  }
+}
+
+@media (min-width: 64rem) {
+  .header {
+    height: 4.5rem;
+  }
+
+  .navigation {
+    gap: var(--space-md);
+  }
+}

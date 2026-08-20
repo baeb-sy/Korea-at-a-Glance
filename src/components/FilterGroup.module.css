@@ -1,0 +1,94 @@
+.group {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.group h3 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: var(--text-small);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.options {
+  display: flex;
+  min-width: 0;
+  gap: var(--space-2xs);
+  padding: 3px var(--page-gutter) var(--space-2xs);
+  margin: -3px calc(var(--page-gutter) * -1) 0;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.option {
+  display: inline-flex;
+  flex: 0 0 auto;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: var(--space-2xs);
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  font-size: var(--text-button);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.option[aria-pressed="true"] {
+  border-color: var(--color-accent-strong);
+  background: var(--color-accent-subtle);
+  font-weight: 600;
+}
+
+.option:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.checkIcon {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .option:hover {
+    border-color: var(--color-border-strong);
+    background: var(--color-surface-subtle);
+  }
+
+  .option[aria-pressed="true"]:hover {
+    border-color: var(--color-accent-strong);
+    background: var(--color-accent-subtle);
+  }
+}
+
+@media (min-width: 40rem) {
+  .group {
+    grid-template-columns: 6rem minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-md);
+  }
+
+  .group h3 {
+    padding-top: 0.75rem;
+  }
+
+  .options {
+    flex-wrap: wrap;
+    padding: 3px;
+    margin: -3px;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.pnpm-store/
+.vite/
+*.tsbuildinfo
+*.local
+.env*.local
+.DS_Store
